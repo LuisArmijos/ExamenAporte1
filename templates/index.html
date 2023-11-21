@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Configuración del encabezado del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp</title>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Encabezado de la página -->
+        <header>
+            <!-- Contenedor del encabezado -->
+            <div class="header-container">
+                <!-- División para el título y la imagen de la aplicación -->
+                <div class="header-div-title">
+                    <!-- Imagen de la aplicación -->
+                    <img class="header-image" src="{{url_for('static', filename='img/logo.png')}}" alt="Imagen de app">
+                    <!-- Título de la aplicación -->
+                    <h1 class="header-div-h text">
+                        Chateando!
+                    </h1>                    
+                </div>
+            </div>
+        </header>
+        <!-- Sección principal para las salas -->
+        <section><!-- rooms -->
+            <!-- Contenedor para la creación y unión a salas -->
+            <div class="section-div-container">
+                <!-- División para la creación de salas -->
+                <div class="div-create">
+                    <!-- Título de la sección de creación -->
+                    <h2 class="div-create-h text">Crear Sala</h2>
+                    <!-- Párrafo editable para el nombre de la sala a crear -->
+                    <p class="div-create-p" id="input-create" contenteditable="true"></p>
+                    <!-- Botón para crear la sala -->
+                    <button class="button-create" id="button-create">Crear</button>
+                </div>
+                <!-- Separador entre las secciones de creación y unión -->
+                <hr class="sep">
+                <!-- División para unirse a una sala existente -->
+                <div class="div-join">
+                    <!-- Título de la sección de unión -->
+                    <h2 class="div-join-h text">Unirse a sala</h2>
+                    <!-- Párrafo editable para el nombre de la sala a unirse -->
+                    <p class="div-join-p" id="input-join" contenteditable="true"></p>
+                    <!-- Botón para unirse a la sala -->
+                    <button class="button-join" id="button-join">Unirse</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pie de página -->
+        <footer>
+            <!-- Contenedor del pie de página -->
+            <div class="footer-container">
+                <!-- Párrafo de texto en el pie de página -->
+                <p class="text">
+                    Exámen Aporte 1
+                </p>
+                <!-- Párrafo de texto en el pie de página -->
+                <p class="text">
+                    Tabata Mendoza - Luis Armijos
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Inclusión de la librería jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- Inclusión del script JavaScript personalizado -->
+    <script src="{{url_for('static',filename='js/index.js')}}"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Configuración del encabezado del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SalaChat</title>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/room.css')}}">
+</head>
+<body>
+    
+    <!-- Encabezado de la página -->
+    <header>
+        <!-- Título principal del chat -->
+        <h1><!--Para llamar al js --></h1> 
+        <!-- Contenedor para el nombre de usuario y el botón de cambiar -->
+        <div class="container-header">
+            <p id="name-user">User</p>
+            <button id="button-name-user">cambiar</button>
+        </div>
+    </header>
+
+    <!-- Contenedor principal del chat -->
+    <div class="container-chat">
+        <!-- Contenedor para la lista de contactos -->
+        <div class="container-contacts" id="container-contacts">
+        </div>
+        <!-- Contenedor para los mensajes -->
+        <div class="container-messages">
+            <!-- Contenedor para mostrar mensajes anteriores -->
+            <div class="container-show" id="container-show">
+                <!-- Párrafo para mostrar mensajes -->
+                <p class="p-show-message" id="p-show-message"></p>
+            </div>
+            <!-- Contenedor para la entrada de nuevos mensajes -->
+            <div class="container-input" id="container-input">
+                <!-- Párrafo editable para la entrada de mensajes -->
+                <p class="p-input-message" id="input-message" contenteditable="true"></p>
+            </div>
+        </div>        
+    </div>
+    
+    <!-- Scripts al final del cuerpo del documento -->
+    <!-- Script para la funcionalidad en tiempo real del chat -->
+    <script src="{{url_for('static',filename='js/live.js')}}"></script>
+    <!-- Librería jQuery para manipulación del DOM -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- Librería Socket.IO para la comunicación en tiempo real -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.5/socket.io.js"></script> 
+    <!-- Script personalizado para la funcionalidad específica de la sala -->
+    <script src="{{url_for('static',filename='js/room.js')}}"></script>
+
+</body>
+</html>

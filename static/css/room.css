@@ -1,0 +1,78 @@
+/* Reset de los estilos predeterminados para todos los elementos */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para el contenedor del encabezado */
+.container-header {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 150px 55px;
+    border: 2px solid black; /* Borde sólido negro */
+}
+
+/* Estilos para el contenedor del chat */
+.container-chat {
+    display: grid;
+    grid-template-columns: 200px auto;
+    column-gap: 10px;
+    height: 745px;
+    padding: 10px;
+    border: 2px solid black; /* Borde sólido negro */
+}
+
+/* Estilos para el contenedor de mensajes */
+.container-messages {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 50px;
+}
+
+/* Estilos para el contenedor de la visualización de mensajes */
+.container-show {
+    padding: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px; /* Sombra con color rgba */
+    border: 2px solid black; /* Borde sólido negro */
+}
+
+/* Estilos para el párrafo que muestra mensajes */
+.p-show-message {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-wrap: anywhere;
+    border: 2px solid black; /* Borde sólido negro */
+}
+
+/* Estilos para el contenedor de entrada de mensajes */
+.container-input {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px; /* Sombra con color rgba */
+    border: 2px solid black; /* Borde sólido negro */
+}
+
+/* Estilos para el párrafo de entrada de mensajes */
+.p-input-message {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid black; /* Borde sólido negro */
+    padding: 3px;
+    max-height: 35px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* Estilos para el enfoque del párrafo de entrada de mensajes */
+.p-input-message:focus {
+    outline: none;
+}
+
+/* Estilos para el contenedor de contactos */
+.container-contacts {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px; /* Sombra con color rgba */
+    padding: 5px;
+    border: 2px solid black; /* Borde sólido negro */
+}

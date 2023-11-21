@@ -1,0 +1,98 @@
+/* Reinicia los estilos predeterminados para todos los elementos */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    text-align: center;
+}
+
+/* Estilos para el contenedor del encabezado */
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+/* Estilos para el texto del encabezado */
+.header-div-h {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 30px 40px;
+    font-size: 50px;
+}
+
+/* Estilos para el contenedor de la sección con líneas divisorias */
+.section-div-container {
+    display: grid;
+    grid-template-columns: auto 4px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los elementos div dentro de la sección */
+.div-create, .div-join {
+    padding: 5px;
+    display: grid;
+    row-gap: 10px;
+    box-shadow: #110c2e26 0px 48px 100px 0px;
+    margin-bottom: 20px; /* Se añadió un margen inferior de 20px */
+}
+
+/* Estilos para el encabezado dentro de los elementos div */
+.div-create-h, .div-join-h {
+    text-align: center;
+}
+
+/* Estilos para el párrafo dentro de los elementos div */
+.div-create-p, .div-join-p {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    padding: 2px;
+}
+
+/* Estilos para los botones dentro de los elementos div */
+.button-create, .button-join {
+    height: 25px;
+}
+
+/* Estilos para el separador */
+.sep {
+    background-color: #000000;
+}
+
+/* Estilos para el contenedor de cursos */
+.container-courses {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+/* Estilos para cursos individuales */
+.course {
+    width: 350px;
+    height: 490px;
+    object-fit: cover;
+}
+
+/* Estilos para el contenedor del pie de página */
+.footer-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+/* Estilos para la fuente del texto */
+.text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
